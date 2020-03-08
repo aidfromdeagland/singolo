@@ -25,6 +25,7 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -135,8 +136,8 @@ a {
 }
 
 .slider-control_prev {
-   left: 42px;
- }
+  left: 42px;
+}
 
 .slider-control_next {
   right: 40px;
@@ -245,13 +246,13 @@ a {
 
 .iphone:hover > .iphone__sensor {
   transform: translate(300px, 370px);
-  transition: transform 1s cubic-bezier(1,.04,.97,1.12);
+  transition: transform 1s cubic-bezier(1, .04, .97, 1.12);
   transition-delay: 0.5s;
 }
 
 .iphone:hover > .iphone__dynamic {
   transform: translate(380px, 310px) rotate(510deg);
-  transition: transform 0.9s cubic-bezier(1,.04,.97,1.12);
+  transition: transform 0.9s cubic-bezier(1, .04, .97, 1.12);
   transition-delay: 0.4s;
 }
 
@@ -263,7 +264,7 @@ a {
 
 .iphone:hover > .iphone__button {
   transform: translate(340px, -78px) rotate(1135deg);
-  transition: transform 3s cubic-bezier(.34,.74,.38,1);
+  transition: transform 3s cubic-bezier(.34, .74, .38, 1);
   transition-delay: 0.4s;
 }
 
@@ -356,5 +357,4 @@ a {
   overflow: hidden;
   text-align: justify;
   hyphens: auto;
-
 }
