@@ -24,6 +24,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-padding-top: 90px;
 }
 
 *, *:before, *:after {
@@ -47,6 +48,10 @@ a {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1337;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,6 +78,10 @@ a {
 .header__nav {
   margin-top: 10px;
   width: 371px;
+}
+
+main {
+  margin-top: 95px;
 }
 
 .nav-list {
@@ -117,8 +126,7 @@ a {
 
 .main__slider {
   position: relative;
-  padding: 53px calc((100% - 1020px) / 2 + 112px) 83px;
-  background: #f06c64;
+  /*padding: 53px calc((100% - 1020px) / 2 + 112px) 83px;*/
   border-bottom: 6px solid #ea676b;
 }
 
@@ -156,8 +164,21 @@ a {
 }
 
 .slide {
-  display: flex;
+  display: none;
   justify-content: space-between;
+  padding: 53px calc((100% - 1020px) / 2 + 112px) 83px;
+}
+
+.slide_active {
+  display: flex;
+}
+
+.slide1 {
+  background: #f06c64;
+}
+
+.slide2 {
+  background: #648BF0;
 }
 
 .iphone {
@@ -172,13 +193,13 @@ a {
   transition: transform 0.5s ease-in, box-shadow 0.5s ease-in;
 }
 
-.iphone:hover:before {
+.iphone_disassembled:before {
   position: absolute;
   top: 200px;
   content: "Made in ???";
 }
 
-.iphone2 {
+.iphone_horizontal {
   margin-right: 147px;
   transform-origin: center;
   transform: rotate(90deg);
@@ -212,7 +233,7 @@ a {
   background: url("assets/images/iphone_screen1.png") no-repeat center;
 }
 
-.iphone2 > .iphone__display {
+.iphone_horizontal > .iphone__display {
   background: url("assets/images/iphone_screen2.png") no-repeat center;
 }
 
@@ -240,31 +261,31 @@ a {
   border-radius: 4px;
 }
 
-.iphone:hover {
+.iphone_disassembled {
   transform: rotate(30deg);
   box-shadow: 22px 8px 0 0 rgba(0, 0, 0, 0.15);
   transition: transform 0.5s ease-in, box-shadow 0.5s ease-in;
 }
 
-.iphone:hover > .iphone__sensor {
+.iphone_disassembled > .iphone__sensor {
   transform: translate(300px, 370px);
   transition: transform 1s cubic-bezier(1, .04, .97, 1.12);
   transition-delay: 0.5s;
 }
 
-.iphone:hover > .iphone__dynamic {
+.iphone_disassembled > .iphone__dynamic {
   transform: translate(380px, 310px) rotate(510deg);
   transition: transform 0.9s cubic-bezier(1, .04, .97, 1.12);
   transition-delay: 0.4s;
 }
 
-.iphone:hover > .iphone__display {
+.iphone_disassembled > .iphone__display {
   transform: translate(100px, 110px) rotate(45deg);
   background-image: linear-gradient(#222222, #222222);
   transition: transform 0.5s ease-in 1.5s, background 0.1s ease-out 1.5s;
 }
 
-.iphone:hover > .iphone__button {
+.iphone_disassembled > .iphone__button {
   transform: translate(340px, -78px) rotate(1135deg);
   transition: transform 3s cubic-bezier(.34, .74, .38, 1);
   transition-delay: 0.4s;
