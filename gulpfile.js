@@ -7,7 +7,7 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
-var uglify = require('gulp-uglify-es').default;
+/*var uglify = require('gulp-uglify-es').default;*/
 
 gulp.task("build-css", function () {
   return gulp.src("assets/sass/style.scss")
@@ -19,18 +19,18 @@ gulp.task("build-css", function () {
     ]))
     .pipe(csso())
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build"))
+    .pipe(gulp.dest("./"))
 });
 
-gulp.task("build-js", function () {
+/*gulp.task("build-js", function () {
   return gulp.src("assets/js/script.js")
     .pipe(sourcemap.init())
     .pipe(uglify())
     .pipe(sourcemap.write("./"))
     .pipe(gulp.dest("build"))
-});
+});*/
 
 gulp.task("build", gulp.series(
-  "build-css",
-  "build-js"
+  "build-css"
+  /*"build-js"*/
 ));

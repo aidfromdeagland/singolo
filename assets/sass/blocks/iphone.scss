@@ -19,7 +19,7 @@
     z-index: 1;
   }
 
-  &_copy-middle > &__display {
+  &_copy-middle > .iphone__display {
     filter: hue-rotate(45deg) saturate(2);
   }
 
@@ -56,12 +56,12 @@
     transition: transform 0.5s;
   }
 
-  &_vertical > &__display {
-    background: url("../../images/iphone_screen1.png") no-repeat center;
+  &_vertical > .iphone__display {
+    background: url("assets/images/iphone_screen1.png") no-repeat center;
   }
 
-  &_horizontal > &__display {
-    background: url("../../images/iphone_screen2.png") no-repeat center;
+  &_horizontal > .iphone__display {
+    background: url("assets/images/iphone_screen2.png") no-repeat center;
   }
 
   &__button {
@@ -103,36 +103,36 @@
     content: "Oops";
   }
 
-  &_disassembled&_vertical {
+  &_disassembled.iphone_vertical {
     animation: shake-hard 1s ease-in;
   }
 
-  &_disassembled&_horizontal {
+  &_disassembled.iphone_horizontal {
     animation: shake-hard_horizontal 1s ease-in;
   }
 
-  &_disassembled&_copy-left, &_disassembled&_copy-right {
+  &_disassembled.iphone_copy-left, &_disassembled.iphone_copy-right {
     animation: shake-hard_scale 0.9s ease-in;
   }
 
-  &_disassembled > &__sensor {
+  &_disassembled > .iphone__sensor {
     transform-origin: center;
     animation: rotate-scale-up-diag-2 0.7s linear 0.9s both;
   }
 
-  &_disassembled > &__dynamic {
+  &_disassembled > .iphone__dynamic {
     transform-origin: center;
     transform: translate(-170px, -30px) rotate(-1250deg);
     transition: transform 0.6s cubic-bezier(.42, .69, .33, 1.07) 0.9s;
   }
 
-  &_disassembled > &__display {
+  &_disassembled > .iphone__display {
     transform: translate(-240px, 100px) rotate(-65deg);
     background-image: linear-gradient(#222222, #222222);
     transition: transform 0.5s ease-out 0.95s;
   }
 
-  &_disassembled > &__button {
+  &_disassembled > .iphone__button {
     transform: translate(185px, -50px) rotate(1135deg);
     transition: transform 1.3s ease-out 0.9s;
   }
