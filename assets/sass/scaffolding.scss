@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+  scroll-padding-top: 90px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 1020px;
+}
+
+main {
+  margin-top: 95px;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

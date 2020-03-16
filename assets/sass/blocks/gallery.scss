@@ -1,0 +1,9 @@
+.gallery {
+  &__image {
+    margin: 10px;
+  }
+
+  &__image_selected {
+    border: 5px solid #F06C64;
+  }
+}

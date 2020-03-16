@@ -1,0 +1,27 @@
+.modal {
+  position: fixed;
+  left: 15vw;
+  top: 25vh;
+  width: 70vw;
+  height: 50vh;
+
+  &_form {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background: #f2f2f2;
+    border: 1px solid #666d89;
+    border-radius: 8px;
+    font-family: "Lato-Regular", "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.15;
+    color: #666d89;
+    box-shadow: 3px 5px 8px 0 #666d89;
+  }
+
+  &_active {
+    display: flex;
+  }
+}

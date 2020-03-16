@@ -1,0 +1,32 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1337;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 33px calc((100% - 1020px) / 2 + 40px) 34px;
+  background: #2d303a;
+  border-bottom: 6px solid #323746;
+
+  &__logo {
+    margin: 0 0 2px 0;
+    letter-spacing: -0.5px;
+    font-family: "Lato-Bold", "Open Sans", sans-serif;
+    font-size: 25px;
+    line-height: 0.8;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    & > span {
+      color: #f06c64
+    }
+  }
+
+  &__nav {
+    margin-top: 10px;
+    width: 371px;
+  }
+}

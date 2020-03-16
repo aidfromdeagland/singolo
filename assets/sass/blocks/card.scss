@@ -1,0 +1,34 @@
+.card {
+  &__heading {
+    margin: 13px 0 0;
+    font-family: "Lato-Black", "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: lighter;
+    color: #666d89;
+    letter-spacing: -0.2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__description {
+    margin-top: 10px;
+    font-family: "Lato-Regular", "Open Sans", sans-serif;
+    font-size: 12px;
+    line-height: 1.75;
+    color: #767e9e;
+    text-align: justify;
+    word-spacing: -0.5px;
+  }
+
+  &__icons {
+    margin-top: 24px;
+    display: flex;
+  }
+
+  &__icons > li:not(:first-of-type) {
+    margin-left: 8px;
+  }
+ 
+}

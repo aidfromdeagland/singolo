@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px calc((100% - 1020px) / 2 + 40px) 22px;
+  background: #2d303a;
+
+  & .icon-social {
+    opacity: 1;
+  }
+
+  & .card__icons {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,62 @@
+.advantages-item {
+  width: 300px;
+  height: 100px;
+  position: relative;
+  padding-left: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 59px;
+    height: 59px;
+    border: 2px solid #666d89;
+    border-radius: 50%;
+  }
+
+  &_design:before {
+    background: url("../../images/icon-pen.svg") no-repeat center;
+  }
+
+  &_innovate:before {
+    background: url("../../images/icon-bulb.svg") no-repeat center;
+  }
+
+  &_love:before {
+    background: url("../../images/icon-heart.svg") no-repeat center;
+  }
+
+  &_responsive:before {
+    background: url("../../images/icon-phone.svg") no-repeat center;
+  }
+
+  &_support:before {
+    background: url("../../images/icon-bubble.svg") no-repeat center;
+  }
+
+  &_star:before {
+    background: url("../../images/icon-star.svg") no-repeat center;
+  }
+
+  &__heading {
+    margin: 0;
+    font-family: "Lato-Black", "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: lighter;
+  }
+
+  &__text {
+    margin-top: 10px;
+    font-family: "Lato-Regular", "Open Sans", sans-serif;
+    font-size: 12px;
+    line-height: 1.75;
+    color: #767e9e;
+    overflow: hidden;
+    text-align: justify;
+    hyphens: auto;
+  }
+}
+

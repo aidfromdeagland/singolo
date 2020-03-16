@@ -172,18 +172,18 @@ main {
   display: flex;
 }
 
-.slide1 {
+.slide_1 {
   background: #f06c64;
   border-bottom: 6px solid #ea676b;
 }
 
-.slide2 {
+.slide_2 {
   justify-content: center;
   background: #648BF0;
   border-bottom: 6px solid #597DE0;
 }
 
-.slide2 > .iphone {
+.slide_2 > .iphone {
   position: relative;
   margin-left: -20px;
   margin-right: -20px;
@@ -747,7 +747,7 @@ main {
   color: #f0d8d9;
 }
 
-.contacts-link {
+.contacts__link {
   margin-left: 23px;
   position: relative;
   font-family: "Lato-Regular", "Open Sans", sans-serif;
@@ -756,7 +756,7 @@ main {
   color: #f0d8d9;
 }
 
-.contacts-link:before {
+.contacts__link:before {
   position: absolute;
   content: "";
   left: -22px;
@@ -765,15 +765,15 @@ main {
   height: 11px;
 }
 
-.contacts__item_loc > .contacts-link:before {
+.contacts__item_loc > .contacts__link:before {
   background: url("assets/images/icon-location.svg") no-repeat center;
 }
 
-.contacts__item_tel > .contacts-link:before {
+.contacts__item_tel > .contacts__link:before {
   background: url("assets/images/icon-tel.svg") no-repeat center;
 }
 
-.contacts__item_email > .contacts-link:before {
+.contacts__item_email > .contacts__link:before {
   background: url("assets/images/icon-mail.svg") no-repeat center;
   top: calc(50% - 3px);
   left: -23px;

@@ -1,0 +1,38 @@
+.filter {
+  &__button {
+    border: 1px solid #666d89;
+    border-radius: 5px;
+    font-family: "Lato-Regular", "Open Sans", sans-serif;
+    font-size: 12px;
+    line-height: 1.725;
+    letter-spacing: 0.075px;
+    color: #767e9e;
+    background: transparent;
+    padding: 0 5.5px;
+    cursor: pointer;
+    vertical-align: center;
+
+    &_active {
+      color: #dedede;
+      border: 1px solid #c5c5c5;
+    }
+
+    &:not(:first-of-type) {
+      margin-left: 10px;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      box-shadow: 0 0 5px 0 #20B2AA;
+    }
+  }
+}
+
+

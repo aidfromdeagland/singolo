@@ -1,0 +1,26 @@
+.nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    position: relative;
+    font-family: "Lato-Bold", "Open Sans", sans-serif;
+    font-size: 12px;
+    line-height: 0.8;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__item:not(:first-of-type):before {
+    position: absolute;
+    content: "·";
+    left: -14px;
+    color: #494e62;
+  }
+
+  &____item_active {
+    color: #f06c64;
+  }
+}

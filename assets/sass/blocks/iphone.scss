@@ -1,0 +1,140 @@
+.iphone {
+  width: 215px;
+  height: 458px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 27px;
+  background: #f2f2f2;
+  box-shadow: 25px 25px 0 0 rgba(0, 0, 0, 0.15);
+
+  &_horizontal {
+    margin-right: 147px;
+    transform-origin: center;
+    transform: rotate(90deg);
+    box-shadow: 25px -25px 0 0 rgba(0, 0, 0, 0.15);
+  }
+
+  &_copy-middle {
+    z-index: 1;
+  }
+
+  &_copy-middle > &__display {
+    filter: hue-rotate(45deg) saturate(2);
+  }
+
+  &_copy-left, &_copy-right {
+    transform-origin: center;
+    transform: scale(0.7);
+    opacity: 0.6;
+  }
+
+  &__sensor {
+    margin-top: 16px;
+    width: 10px;
+    height: 10px;
+    border: 3px solid #d8d8d8;
+    border-radius: 50%;
+    background: #eb5055;
+    transition: transform 0.5s;
+  }
+
+  &__dynamic {
+    margin-top: 10px;
+    background-color: #acacac;
+    width: 36px;
+    height: 5px;
+    border-radius: 2px;
+    transition: transform 0.5s;
+  }
+
+  &__display {
+    margin-top: 21px;
+    width: 194px;
+    height: 339px;
+    border-radius: 2px;
+    transition: transform 0.5s;
+  }
+
+  &_vertical > &__display {
+    background: url("../../images/iphone_screen1.png") no-repeat center;
+  }
+
+  &_horizontal > &__display {
+    background: url("../../images/iphone_screen2.png") no-repeat center;
+  }
+
+  &__button {
+    margin-top: 7px;
+    position: relative;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #fafafa;
+    transition: transform 0.5s;
+  }
+
+  &__button:hover {
+    box-shadow: 0 0 3px 0 rgba(128, 128, 128, 0.5)
+  }
+
+  &__button:active {
+    box-shadow: 0 0 5px 0 rgba(255, 128, 128, 0.5)
+  }
+
+  &__button:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 16px;
+    height: 16px;
+    background: #fafafa;
+    border: 2px solid #bababa;
+    border-radius: 4px;
+  }
+
+  &_disassembled:before {
+    position: absolute;
+    top: 200px;
+    content: "Oops";
+  }
+
+  &_disassembled&_vertical {
+    animation: shake-hard 1s ease-in;
+  }
+
+  &_disassembled&_horizontal {
+    animation: shake-hard_horizontal 1s ease-in;
+  }
+
+  &_disassembled&_copy-left, &_disassembled&_copy-right {
+    animation: shake-hard_scale 0.9s ease-in;
+  }
+
+  &_disassembled > &__sensor {
+    transform-origin: center;
+    animation: rotate-scale-up-diag-2 0.7s linear 0.9s both;
+  }
+
+  &_disassembled > &__dynamic {
+    transform-origin: center;
+    transform: translate(-170px, -30px) rotate(-1250deg);
+    transition: transform 0.6s cubic-bezier(.42, .69, .33, 1.07) 0.9s;
+  }
+
+  &_disassembled > &__display {
+    transform: translate(-240px, 100px) rotate(-65deg);
+    background-image: linear-gradient(#222222, #222222);
+    transition: transform 0.5s ease-out 0.95s;
+  }
+
+  &_disassembled > &__button {
+    transform: translate(185px, -50px) rotate(1135deg);
+    transition: transform 1.3s ease-out 0.9s;
+  }
+}
+

@@ -1,0 +1,22 @@
+{
+  "name": "singolo",
+  "version": "1.0.0",
+  "description": "task for RSSchool",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "author": "Stanislau Laniuk",
+  "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify-es": "^2.0.0",
+    "node-sass": "^4.13.0"
+  },
+  
+}

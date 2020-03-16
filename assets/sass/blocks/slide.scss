@@ -1,0 +1,27 @@
+.slide {
+  display: none;
+  justify-content: space-between;
+  padding: 53px calc((100% - 1020px) / 2 + 112px) 83px;
+  transition: background 0.5s;
+
+  &_active {
+    display: flex;
+  }
+
+  &_1 {
+    background: #f06c64;
+    border-bottom: 6px solid #ea676b;
+  }
+
+  &_2 {
+    justify-content: center;
+    background: #648BF0;
+    border-bottom: 6px solid #597DE0;
+  }
+
+  &_2 > .iphone {
+    position: relative;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}

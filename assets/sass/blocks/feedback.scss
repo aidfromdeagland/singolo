@@ -1,0 +1,66 @@
+.feedback {
+  &__input {
+    padding-left: 14px;
+    font-family: "Lato-Regular", "Open Sans", sans-serif;
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: -0.2px;
+    color: #f0d8d9;
+    background: #d6564f;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+
+    &:not(:first-of-type) {
+      margin-top: 16px;
+    }
+
+    &::placeholder {
+      color: #f48c8f;
+    }
+
+    &_name,
+    &_email,
+    &_subject {
+      height: 38px;
+    }
+
+    &:hover {
+      transform: scale(1.015);
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      box-shadow: 0 0 5px 0 #ff2fbb;
+    }
+
+    &:invalid {
+      box-shadow: 0 0 5px 0 #ff1111;
+    }
+  }
+
+  &__textarea {
+    margin-top: 16px;
+    height: 202px;
+    padding-top: 7px;
+    resize: none;
+  }
+
+  &__submit {
+    margin-top: 16px;
+    width: 38%;
+    min-height: 30px;
+    align-self: center;
+    border: 1px solid #848484;
+    background: #77bb66;
+    font-family: "Lato-Regular", "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #242424;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
