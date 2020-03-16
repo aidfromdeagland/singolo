@@ -50,15 +50,15 @@
   }
 
   &__item_loc > &__link:before {
-    background: url("../../images/icon-location.svg") no-repeat center;
+    background: url("assets/images/icon-location.svg") no-repeat center;
   }
 
   &__item_tel > &__link:before {
-    background: url("../../images/icon-tel.svg") no-repeat center;
+    background: url("assets/images/icon-tel.svg") no-repeat center;
   }
 
   &__item_email > &__link:before {
-    background: url("../../images/icon-mail.svg") no-repeat center;
+    background: url("assets/images/icon-mail.svg") no-repeat center;
     top: calc(50% - 3px);
     left: -23px;
     width: 13px;
