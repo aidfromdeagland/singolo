@@ -58,10 +58,12 @@
 
   &_vertical > .iphone__display {
     background: url("assets/images/iphone_screen1.png") no-repeat center;
+    background-size: contain;
   }
 
   &_horizontal > .iphone__display {
     background: url("assets/images/iphone_screen2.png") no-repeat center;
+    background-size: contain;
   }
 
   &__button {
@@ -137,4 +139,77 @@
     transition: transform 1.3s ease-out 0.9s;
   }
 }
+
+@media (max-width: 1019px) {
+  .iphone {
+    width: 163px;
+    height: 345px;
+    border-radius: 20px;
+    box-shadow: 19px 19px 0 0 rgba(0, 0, 0, 0.15);
+
+    &_horizontal {
+      margin-right: 110px;
+      box-shadow: 19px -19px 0 0 rgba(0, 0, 0, 0.15);
+    }
+
+    &__sensor {
+      margin-top: 12px;
+      width: 7px;
+      height: 7px;
+      border: 2px solid #d8d8d8;
+    }
+
+    &__dynamic {
+      margin-top: 8px;
+      background-color: #acacac;
+      width: 27px;
+      height: 4px;
+    }
+
+    &__display {
+      margin-top: 16px;
+      width: 145px;
+      height: 256px;
+    }
+
+    &_vertical > .iphone__display {
+      background-size: cover;
+    }
+
+    &_horizontal > .iphone__display {
+      background-size: cover;
+    }
+
+    &__button {
+      margin-top: 5px;
+      width: 31px;
+      height: 31px;
+      border-radius: 50%;
+    }
+
+    &__button:after {
+      width: 13px;
+      height: 13px;
+      border-radius: 3px;
+    }
+
+    &_disassembled:before {
+      top: 150px;
+    }
+
+    &_disassembled > .iphone__dynamic {
+      transform: translate(-128px, -22px) rotate(-1250deg);
+    }
+
+    &_disassembled > .iphone__display {
+      transform: translate(-180px, 75px) rotate(-65deg);
+    }
+
+    &_disassembled > .iphone__button {
+      transform: translate(131px, -38px) rotate(1135deg);
+      transition: transform 1.3s ease-out 0.9s;
+    }
+  }
+}
+
 

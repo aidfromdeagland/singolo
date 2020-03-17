@@ -7,6 +7,7 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
+var server = require("browser-sync").create();
 /*var uglify = require('gulp-uglify-es').default;*/
 
 gulp.task("build-css", function () {
@@ -20,6 +21,7 @@ gulp.task("build-css", function () {
     .pipe(csso())
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("./"))
+    .pipe(server.stream());
 });
 
 /*gulp.task("build-js", function () {
@@ -29,6 +31,21 @@ gulp.task("build-css", function () {
     .pipe(sourcemap.write("./"))
     .pipe(gulp.dest("build"))
 });*/
+
+gulp.task("server", function () {
+  server.init({
+    server: "./",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
+  });
+
+  gulp.watch("assets/sass/**/*.scss", gulp.series("build-css"));
+  gulp.watch("source/*.html").on("change", server.reload);
+});
+
+gulp.task("start", gulp.series("build-css", "server"));
 
 gulp.task("build", gulp.series(
   "build-css"

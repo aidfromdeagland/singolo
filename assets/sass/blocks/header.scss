@@ -30,3 +30,14 @@
     width: 371px;
   }
 }
+
+@media (max-width: 1019px) {
+  .header {
+    padding: 33px calc((100% - 768px) / 2 + 40px) 34px;
+
+    &__nav {
+      margin-top: 5px;
+      width: 371px;
+    }
+  }
+}

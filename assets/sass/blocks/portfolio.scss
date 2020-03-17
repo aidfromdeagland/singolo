@@ -39,3 +39,16 @@
   }
 }
 
+@media (max-width: 1019px) {
+  .portfolio {
+    padding: 68px calc((100% - 768px) / 2 + 40px) 67px;
+
+    &__gallery {
+      margin-top: 8px;
+      margin-left: -10px;
+      max-height: 794px;
+      width: 708px;
+    }
+  }
+}
+

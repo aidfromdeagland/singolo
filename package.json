@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "task for RSSchool",
   "scripts": {
-    "build": "gulp build"
+    "build": "gulp build",
+    "start": "gulp start"
   },
   "author": "Stanislau Laniuk",
   "devDependencies": {
     "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-csso": "^4.0.1",
     "gulp-plumber": "^1.2.1",

@@ -1,4 +1,10 @@
 .card {
+  &__image {
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+  }
+
   &__heading {
     margin: 13px 0 0;
     font-family: "Lato-Black", "Open Sans", sans-serif;
@@ -30,5 +36,14 @@
   &__icons > li:not(:first-of-type) {
     margin-left: 8px;
   }
- 
+}
+
+@media (max-width: 1019px) {
+  .card {
+    &__image {
+      width: 220px;
+      height: 220px;
+    }
+  }
+
 }

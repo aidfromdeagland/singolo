@@ -13,6 +13,12 @@ body {
   min-width: 1020px;
 }
 
+@media (max-width: 1019px) {
+  body {
+    min-width: 768px;
+  }
+}
+
 main {
   margin-top: 95px;
 }

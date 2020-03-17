@@ -27,3 +27,14 @@
     gap: 23px 20px;
   }
 }
+
+@media (max-width: 1019px) {
+  .services {
+    padding: 68px calc((100% - 768px) / 2 + 40px) 51px;
+
+    &__advantages-list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 53px 40px;
+    }
+  }
+}

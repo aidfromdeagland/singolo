@@ -1,9 +1,22 @@
 .gallery {
   &__image {
     margin: 10px;
+    width: 220px;
+    height: 187px;
+    box-sizing: border-box;
+    background-size: contain;
   }
 
   &__image_selected {
     border: 5px solid #F06C64;
+  }
+}
+
+@media (max-width: 1019px) {
+  .gallery {
+    &__image {
+      width: 216px;
+      height: 184px;
+    }
   }
 }

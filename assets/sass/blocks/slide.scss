@@ -25,3 +25,17 @@
     margin-right: -20px;
   }
 }
+
+@media (max-width: 1019px) {
+  .slide {
+    padding: 40px calc((100% - 768px) / 2 + 84px) 62px;
+
+    &_1 {
+      border-bottom: 5px solid #ea676b;
+    }
+
+    &_2 {
+      border-bottom: 5px solid #597DE0;
+    }
+  }
+}

@@ -13,3 +13,9 @@
     margin-top: 0;
   }
 }
+
+@media (max-width: 1019px) {
+  .footer {
+    padding: 22px calc((100% - 768px) / 2 + 40px) 22px;
+  }
+}

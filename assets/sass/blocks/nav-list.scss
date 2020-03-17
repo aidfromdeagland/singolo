@@ -24,3 +24,11 @@
     color: #f06c64;
   }
 }
+
+@media (max-width: 1019px) {
+  .nav-list {
+    &__item:not(:first-of-type):before {
+      color: #ffffff;
+    }
+  }
+}
