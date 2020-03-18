@@ -1,8 +1,10 @@
 .slide {
-  display: none;
+  display: flex;
+  width: 100vw;
+  flex-grow: 0;
   justify-content: space-between;
-  padding: 53px calc((100% - 1020px) / 2 + 112px) 83px;
-  transition: background 0.5s;
+  padding: 53px calc((100vw - 1020px) / 2 + 112px) 83px;
+  transition: all 0.5s;
 
   &_active {
     display: flex;
@@ -28,7 +30,7 @@
 
 @media (max-width: 1019px) {
   .slide {
-    padding: 40px calc((100% - 768px) / 2 + 84px) 62px;
+    padding: 40px calc((100vw - 768px) / 2 + 84px) 62px;
 
     &_1 {
       border-bottom: 5px solid #ea676b;

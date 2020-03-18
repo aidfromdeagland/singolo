@@ -35,42 +35,45 @@
 </header>
 <main>
   <section class="slider">
-    <button class="slider-control slider-control_prev" type="button"></button>
-    <button class="slider-control slider-control_next" type="button"></button>
-    <div class="slide slide_1 slide_active">
-      <div class="iphone iphone_vertical">
-        <div class="iphone__sensor"></div>
-        <div class="iphone__dynamic"></div>
-        <div class="iphone__display"></div>
-        <div class="iphone__button"></div>
+    <button class="slider__control slider__control_prev" type="button"></button>
+    <button class="slider__control slider__control_next" type="button"></button>
+    <div class="slider__wrapper">
+      <div class="slider__slides">
+        <div class="slide slide_1">
+          <div class="iphone iphone_vertical">
+            <div class="iphone__sensor"></div>
+            <div class="iphone__dynamic"></div>
+            <div class="iphone__display"></div>
+            <div class="iphone__button"></div>
+          </div>
+          <div class="iphone iphone_horizontal">
+            <div class="iphone__sensor"></div>
+            <div class="iphone__dynamic"></div>
+            <div class="iphone__display"></div>
+            <div class="iphone__button"></div>
+          </div>
+        </div>
+        <div class="slide slide_2">
+          <div class="iphone iphone_vertical iphone_copy-left">
+            <div class="iphone__sensor"></div>
+            <div class="iphone__dynamic"></div>
+            <div class="iphone__display"></div>
+            <div class="iphone__button"></div>
+          </div>
+          <div class="iphone iphone_vertical iphone_copy-middle">
+            <div class="iphone__sensor"></div>
+            <div class="iphone__dynamic"></div>
+            <div class="iphone__display"></div>
+            <div class="iphone__button"></div>
+          </div>
+          <div class="iphone iphone_vertical iphone_copy-right">
+            <div class="iphone__sensor"></div>
+            <div class="iphone__dynamic"></div>
+            <div class="iphone__display"></div>
+            <div class="iphone__button"></div>
+          </div>
+        </div>
       </div>
-      <div class="iphone iphone_horizontal">
-        <div class="iphone__sensor"></div>
-        <div class="iphone__dynamic"></div>
-        <div class="iphone__display"></div>
-        <div class="iphone__button"></div>
-      </div>
-    </div>
-    <div class="slide slide_2">
-      <div class="iphone iphone_vertical iphone_copy-left">
-        <div class="iphone__sensor"></div>
-        <div class="iphone__dynamic"></div>
-        <div class="iphone__display"></div>
-        <div class="iphone__button"></div>
-      </div>
-      <div class="iphone iphone_vertical iphone_copy-middle">
-        <div class="iphone__sensor"></div>
-        <div class="iphone__dynamic"></div>
-        <div class="iphone__display"></div>
-        <div class="iphone__button"></div>
-      </div>
-      <div class="iphone iphone_vertical iphone_copy-right">
-        <div class="iphone__sensor"></div>
-        <div class="iphone__dynamic"></div>
-        <div class="iphone__display"></div>
-        <div class="iphone__button"></div>
-      </div>
-
     </div>
 
   </section>
@@ -355,7 +358,6 @@
   </div>
   <button class="form-modal__button" type="button">OK</button>
 </div>
-
 <script async src="script.js"></script>
 </body>
 </html>
