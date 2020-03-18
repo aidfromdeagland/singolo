@@ -131,6 +131,8 @@ const shuffle = function (array) {
 };
 
 
+const header = document.querySelector('header');
+const sections = document.querySelectorAll('section');
 const navItems = document.querySelectorAll('.nav-list__item');
 const slider = document.querySelector('.slider');
 const sliderControlPrev = slider.querySelector('.slider__control_prev');
@@ -143,9 +145,24 @@ let galleryImages = document.querySelectorAll('.gallery__image');
 const feedbackForm = document.querySelector('.feedback');
 const modalForm = document.querySelector('.modal_form');
 
-
 slide(slider, slidesContainer, sliderControlPrev, sliderControlNext);
 
+const windowScrollHandler = function () {
+  const currentPos = window.scrollY;
+
+  sections.forEach((x, xIndex) => {
+    if (x.offsetTop - header.offsetHeight - (window.innerHeight - header.offsetHeight) / 2 <= currentPos && x.offsetTop + x.offsetHeight > currentPos) {
+      navItems.forEach((y, yIndex) => {
+        if (y.classList.contains('nav-list__item_active')) {
+          y.classList.remove('nav-list__item_active');
+        }
+        if (yIndex === xIndex) {
+          y.classList.add('nav-list__item_active');
+        }
+      });
+    }
+  });
+};
 
 const modalResolveButtonHandler = function () {
   this.closest('.modal_active').classList.remove('modal_active');
@@ -153,26 +170,23 @@ const modalResolveButtonHandler = function () {
   this.removeEventListener('click', modalResolveButtonHandler);
 };
 
-const modalOnEscapeHandler = function (evt) {
+const modalEscapeKeydownHandler = function (evt) {
   if (evt.code === 'Escape') {
     if (modalForm.classList.contains('modal_active')) {
       modalForm.classList.remove('modal_active');
       feedbackForm.reset();
-      window.removeEventListener('keydown', modalOnEscapeHandler)
+      window.removeEventListener('keydown', modalEscapeKeydownHandler)
     }
   }
 };
 
-navItems.forEach(x => x.addEventListener('click', () => {
-  const currentActive = document.querySelector('.nav-list__item_active');
-  currentActive.classList.toggle('nav-list__item_active');
-  x.classList.toggle('nav-list__item_active');
-}));
+windowScrollHandler();
+window.addEventListener('scroll', windowScrollHandler);
 
 iphones.forEach(x => x.addEventListener('click', () => {
   x.classList.toggle('iphone_disassembled');
 }));
-iphones.forEach(x => x.addEventListener('touchend', () => {
+iphones.forEach(x => x.addEventListener('touchstart', () => {
   x.classList.toggle('iphone_disassembled');
 }));
 
@@ -215,7 +229,7 @@ feedbackForm.addEventListener('submit', (evt) => {
     modalFormDescription.textContent = descriptionText.trim() ? `Описание: ${descriptionText.trim()}` : 'Без описания';
 
     modalForm.classList.add('modal_active');
-    window.addEventListener('keydown', modalOnEscapeHandler);
+    window.addEventListener('keydown', modalEscapeKeydownHandler);
   }
 
   const modalResolveButton = document.querySelector('.form-modal__button');
