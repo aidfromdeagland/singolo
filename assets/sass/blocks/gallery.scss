@@ -1,10 +1,11 @@
 .gallery {
   &__image {
-    margin: 10px;
-    width: 220px;
-    height: 187px;
     box-sizing: border-box;
     background-size: contain;
+
+    &:nth-child(n + 13) {
+      display: none;
+    }
   }
 
   &__image_selected {
@@ -14,9 +15,5 @@
 
 @media (max-width: 1019px) {
   .gallery {
-    &__image {
-      width: 216px;
-      height: 184px;
-    }
   }
 }
