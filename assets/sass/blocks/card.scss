@@ -2,7 +2,6 @@
   &__image {
     width: 300px;
     height: 300px;
-    background-size: cover;
   }
 
   &__heading {
@@ -41,8 +40,20 @@
 @media (max-width: 1019px) {
   .card {
     &__image {
-      width: 220px;
-      height: 220px;
+      width: 100%;
+      height: auto;
+    }
+
+    &__heading {
+      margin: 8px 0 0;
+    }
+
+    &__description {
+      margin: 3px 0 3px;
+    }
+
+    &__icons {
+      margin-top: 12px;
     }
   }
 

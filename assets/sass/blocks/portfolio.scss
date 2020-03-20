@@ -39,9 +39,14 @@
 
 @media (max-width: 1019px) {
   .portfolio {
-    padding: 68px calc((100% - 768px) / 2 + 40px) 67px;
+    padding: 68px 40px 67px;
+
+    &__description {
+      letter-spacing: 0.1px;
+    }
 
     &__gallery {
+      margin-top: 28px;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(4, 1fr);
     }

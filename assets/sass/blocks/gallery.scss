@@ -1,7 +1,7 @@
 .gallery {
   &__image {
     box-sizing: border-box;
-    background-size: contain;
+    width: 100%;
 
     &:nth-child(n + 13) {
       display: none;
@@ -9,6 +9,7 @@
   }
 
   &__image_selected {
+    box-sizing: border-box;
     border: 5px solid #F06C64;
   }
 }

@@ -30,11 +30,13 @@
 
 @media (max-width: 1019px) {
   .services {
-    padding: 68px calc((100% - 768px) / 2 + 40px) 51px;
+    padding: 48px calc((100% - 768px) / 2 + 40px) 61px;
 
     &__advantages-list {
+      margin-top: 38px;
       grid-template-columns: repeat(2, 1fr);
-      gap: 53px 40px;
+      justify-content: space-between;
+      gap: 43px 20px;
     }
   }
 }

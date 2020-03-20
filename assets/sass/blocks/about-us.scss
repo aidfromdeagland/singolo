@@ -25,6 +25,10 @@
 
 @media (max-width: 1019px) {
   .about-us {
-    padding: 68px calc((100% - 768px) / 2 + 40px) 67px;
+    padding: 63px 40px 68px;
+  }
+
+  &__heading {
+    margin: 0;
   }
 }

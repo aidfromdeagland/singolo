@@ -6,14 +6,17 @@
   gap: 20px;
 
   &__card {
-    width: 300px;
+    width: auto;
   }
 }
 
 @media (max-width: 1019px) {
   .members {
+    margin-top: 38px;
+    gap: 2.2%;
+
     &__card {
-      width: 220px;
+      width: auto;
     }
   }
 }

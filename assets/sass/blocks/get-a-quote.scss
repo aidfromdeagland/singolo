@@ -38,10 +38,17 @@
 
 @media (max-width: 1019px) {
   .get-a-quote {
-    padding: 68px calc((100% - 768px) / 2 + 40px) 21px;
+    padding: 63px 40px 21px;
+
+    &__contact-us-block {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 30px;
+    }
 
     &__form {
-      width: 442px;
+      width: auto;
     }
   }
 }

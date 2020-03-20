@@ -64,3 +64,18 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: 1019px) {
+  .feedback {
+    &__input {
+      &:not(:first-of-type) {
+        margin-top: 12px;
+      }
+    }
+
+    &__textarea {
+      margin-top: 12px;
+      height: 159px;
+    }
+  }
+}
