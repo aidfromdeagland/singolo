@@ -30,10 +30,10 @@
 
 @media (max-width: 1019px) {
   .services {
-    padding: 48px calc((100% - 768px) / 2 + 40px) 61px;
+    padding: 48px 40px 61px;
 
     &__advantages-list {
-      margin-top: 38px;
+      margin: 38px calc((100vw - 768px)/2) 0;
       grid-template-columns: repeat(2, 1fr);
       justify-content: space-between;
       gap: 43px 20px;

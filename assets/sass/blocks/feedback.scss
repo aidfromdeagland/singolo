@@ -44,22 +44,22 @@
 
   &__textarea {
     margin-top: 16px;
-    height: 202px;
+    height: 159px;
     padding-top: 7px;
     resize: none;
   }
 
   &__submit {
-    margin-top: 16px;
-    width: 38%;
-    min-height: 30px;
-    align-self: center;
+    margin-top: 14px;
+    width: 136px;
+    min-height: 38px;
+    align-self: flex-start;
     border: 1px solid #848484;
-    background: #77bb66;
-    font-family: "Lato-Regular", "Open Sans", sans-serif;
+    background: #FBC65F;
+    font-family: "Lato-Bold", "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 1.8;
-    color: #242424;
+    color: #886A30;
     text-transform: uppercase;
     cursor: pointer;
   }

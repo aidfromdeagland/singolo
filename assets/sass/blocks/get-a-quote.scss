@@ -1,5 +1,5 @@
 .get-a-quote {
-  padding: 68px calc((100% - 1020px) / 2 + 40px) 21px;
+  padding: 68px calc((100% - 1020px) / 2 + 40px) 58px;
   background: #f06c64;
   border-bottom: 6px solid #ea676b;
 
@@ -24,8 +24,9 @@
 
   &__contact-us-block {
     margin-top: 44px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
   }
 
   &__form {
@@ -38,7 +39,7 @@
 
 @media (max-width: 1019px) {
   .get-a-quote {
-    padding: 63px 40px 21px;
+    padding: 63px 40px 43px;
 
     &__contact-us-block {
       margin-top: 24px;
