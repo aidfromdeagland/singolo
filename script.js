@@ -83,6 +83,7 @@ const slide = function (wrapper, items, prev, next) {
     items.classList.add('shifting');
 
     if (allowShift) {
+      slideSize = items.getElementsByClassName('slide')[0].offsetWidth;
       if (!action) {
         posInitial = items.offsetLeft;
       }
@@ -99,6 +100,7 @@ const slide = function (wrapper, items, prev, next) {
   }
 
   function checkIndex() {
+    slideSize = items.getElementsByClassName('slide')[0].offsetWidth;
     items.classList.remove('shifting');
 
     if (index == -1) {
