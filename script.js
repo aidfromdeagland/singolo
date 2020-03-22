@@ -153,7 +153,7 @@ const windowScrollHandler = function () {
   const currentPos = window.scrollY;
 
   sections.forEach((x, xIndex) => {
-    if (x.offsetTop - header.offsetHeight - (window.innerHeight - header.offsetHeight) / 2 <= currentPos && x.offsetTop + x.offsetHeight > currentPos) {
+    if (x.offsetTop - header.offsetHeight - (window.innerHeight - header.offsetHeight) <= currentPos && x.offsetTop + x.offsetHeight > currentPos) {
       navItems.forEach((y, yIndex) => {
         if (y.classList.contains('nav-list__item_active')) {
           y.classList.remove('nav-list__item_active');
@@ -202,7 +202,6 @@ filterButtons.forEach(x => x.addEventListener('click', () => {
     let shuffledImages = shuffle(Array.from(galleryImages));
     galleryImages.forEach(x => galleryBlock.removeChild(x));
     shuffledImages.forEach(x => galleryBlock.appendChild(x));
-    galleryImages = document.querySelectorAll('.gallery__image');
   }
 }));
 
