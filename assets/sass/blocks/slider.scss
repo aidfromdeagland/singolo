@@ -73,3 +73,18 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .slider {
+    &__control {
+
+      &_prev {
+        left: calc((100% - 320px) / 2 + 30px);
+      }
+
+      &_next {
+        right: calc((100% - 320px) / 2 + 26px);
+      }
+    }
+  }
+}

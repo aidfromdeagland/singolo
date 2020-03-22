@@ -169,7 +169,6 @@
 
     &__dynamic {
       margin-top: 8px;
-      background-color: #acacac;
       width: 27px;
       height: 4px;
     }
@@ -192,7 +191,6 @@
       margin-top: 5px;
       width: 31px;
       height: 31px;
-      border-radius: 50%;
     }
 
     &__button:after {
@@ -215,5 +213,65 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .iphone {
+    width: 79px;
+    height: 168px;
+    border-radius: 10px;
+    box-shadow: 9px 9px 0 0 rgba(0, 0, 0, 0.15);
+
+    &_horizontal {
+      margin-right: 55px;
+      box-shadow: 9px - 9px 0 0 rgba(0, 0, 0, 0.15);
+    }
+
+    &__sensor {
+      margin-top: 6px;
+      width: 3.5px;
+      height: 3.5px;
+      border: 1.5px solid #d8d8d8;
+    }
+
+    &__dynamic {
+      margin-top: 4px;
+      width: 13px;
+      height: 2px;
+    }
+
+    &__display {
+      margin-top: 9px;
+      width: 69px;
+      height: 122px;
+    }
+
+    &__button {
+      margin-top: 3px;
+      width: 15px;
+      height: 15px;
+    }
+
+    &__button:after {
+      width: 6px;
+      height: 6px;
+      border-radius: 2px;
+    }
+
+    &_disassembled > .iphone__dynamic {
+      transform: translate(-64px, -11px) rotate(-1250deg);
+    }
+
+    &_disassembled > .iphone__display {
+      transform: translate(-90px, 38px) rotate(-65deg);
+    }
+
+    &_disassembled > .iphone__button {
+      transform: translate(68px, -19px) rotate(1135deg);
+      transition: transform 1.3s ease-out 0.9s;
+    }
+  }
+}
+
+
 
 

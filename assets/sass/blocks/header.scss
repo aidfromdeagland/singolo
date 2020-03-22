@@ -10,6 +10,18 @@
   background: #2d303a;
   border-bottom: 6px solid #323746;
 
+  &__button_burger {
+    display: none;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    width: 25px;
+    height: 20px;
+    box-sizing: border-box;
+    appearance: none;
+    border: none;
+  }
+
   &__logo {
     margin: 0 0 2px 0;
     letter-spacing: -0.5px;
@@ -38,6 +50,31 @@
     &__nav {
       margin-top: 5px;
       width: 371px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    width: 100%;
+    justify-content: center;
+    padding: 25px 20px 19px;
+
+    &__button_burger {
+      display: block;
+      background: url(assets/images/burger-menu-icon.svg) center no-repeat;
+    }
+
+    &__logo {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    &__nav {
+      display: none;
+      margin-top: 0;
+      width: 74vw;
     }
   }
 }

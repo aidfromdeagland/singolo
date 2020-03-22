@@ -41,3 +41,17 @@
     }
   }
 }
+
+@media (max-width: 375px) {
+  .slide {
+    padding: 20px calc((100vw - 375px) / 2 + 41px) 30px;
+
+    &_1 {
+      border-bottom: 3px solid #ea676b;
+    }
+
+    &_2 {
+      border-bottom: 3px solid #597DE0;
+    }
+  }
+}
