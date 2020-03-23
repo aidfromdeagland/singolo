@@ -14,6 +14,10 @@ const slide = function (wrapper, items, prev, next) {
     index = 0,
     allowShift = true;
 
+  window.addEventListener('resize', () => {
+    slideSize = items.getElementsByClassName('slide')[0].offsetWidth
+  });
+
   // Clone first and last slide
   items.appendChild(cloneFirst);
   items.insertBefore(cloneLast, firstSlide);
