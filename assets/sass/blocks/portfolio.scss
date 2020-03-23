@@ -53,3 +53,24 @@
   }
 }
 
+@media (max-width: 767px) {
+  .portfolio {
+    padding: 52px 30px 35px;
+
+    &__description {
+      letter-spacing: 0.1px;
+    }
+
+    &__filter {
+      margin-top: 16px;
+    }
+
+    &__gallery {
+      margin-top: 25px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 14px;
+    }
+  }
+}
+

@@ -54,3 +54,24 @@
   }
 }
 
+@media (max-width: 767px) {
+  .get-a-quote {
+    padding: 53px 30px 36px;
+
+    &__description {
+      word-spacing: 1px;
+    }
+
+    &__contact-us-block {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    &__form {
+      width: auto;
+    }
+  }
+}
+

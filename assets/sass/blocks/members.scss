@@ -2,7 +2,6 @@
   margin-top: 45px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
   gap: 20px;
 
   &__card {
@@ -14,9 +13,13 @@
   .members {
     margin-top: 38px;
     gap: 2.2%;
+  }
+}
 
-    &__card {
-      width: auto;
-    }
+@media (max-width: 767px) {
+  .members {
+    margin-top: 23px;
+    grid-template-columns: 1fr;
+    gap: 34px;
   }
 }

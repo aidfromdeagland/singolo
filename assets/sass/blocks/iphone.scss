@@ -223,7 +223,7 @@
 
     &_horizontal {
       margin-right: 55px;
-      box-shadow: 9px - 9px 0 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 9px -9px 0 0 rgba(0, 0, 0, 0.15);
     }
 
     &__sensor {
@@ -254,7 +254,7 @@
     &__button:after {
       width: 6px;
       height: 6px;
-      border-radius: 2px;
+      border-radius: 1px;
     }
 
     &_disassembled > .iphone__dynamic {

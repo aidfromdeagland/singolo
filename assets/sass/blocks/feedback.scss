@@ -79,3 +79,13 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .feedback {
+    &__submit {
+      margin-top: 14px;
+      width: 100%;
+      min-height: 50px;
+    }
+  }
+}

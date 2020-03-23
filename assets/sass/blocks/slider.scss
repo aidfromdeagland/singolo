@@ -79,11 +79,11 @@
     &__control {
 
       &_prev {
-        left: calc((100% - 320px) / 2 + 30px);
+        left: 10px;
       }
 
       &_next {
-        right: calc((100% - 320px) / 2 + 26px);
+        right: 10px;
       }
     }
   }

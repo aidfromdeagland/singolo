@@ -32,3 +32,13 @@
     margin: 0;
   }
 }
+
+@media (max-width: 767px) {
+  .about-us {
+    padding: 43px 30px 39px;
+
+    &__description {
+      word-spacing: 1px;
+    }
+  }
+}

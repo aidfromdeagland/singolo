@@ -14,7 +14,12 @@
   }
 }
 
-@media (max-width: 1019px) {
+@media (max-width: 767px) {
   .gallery {
+    &__image {
+      &:nth-child(n + 9) {
+        display: none;
+      }
+    }
   }
 }

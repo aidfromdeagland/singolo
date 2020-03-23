@@ -83,3 +83,11 @@
   }
 }
 
+@media (max-width: 767px) {
+  .contacts {
+    &__link {
+      line-height: 2;
+    }
+  }
+}
+

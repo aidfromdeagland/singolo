@@ -56,5 +56,12 @@
       margin-top: 12px;
     }
   }
+}
 
+@media (max-width: 1019px) {
+  .card {
+    &__heading {
+      margin: 14px 0 0;
+    }
+  }
 }
