@@ -134,6 +134,7 @@ const shuffle = function (array) {
 
 
 const header = document.querySelector('header');
+const headerButtonBurger = header.querySelector('.header__button_burger');
 const sections = document.querySelectorAll('section');
 const navItems = document.querySelectorAll('.nav-list__item');
 const slider = document.querySelector('.slider');
@@ -143,9 +144,11 @@ const slidesContainer = slider.querySelector('.slider__slides');
 const iphones = document.querySelectorAll('.iphone');
 const filterButtons = document.querySelectorAll('.filter__button');
 const galleryBlock = document.querySelector('.gallery');
-let galleryImages = document.querySelectorAll('.gallery__image');
+const galleryImages = document.querySelectorAll('.gallery__image');
 const feedbackForm = document.querySelector('.feedback');
 const modalForm = document.querySelector('.modal_form');
+const modalResolveButton = document.querySelector('.form-modal__button');
+
 
 slide(slider, slidesContainer, sliderControlPrev, sliderControlNext);
 
@@ -184,6 +187,10 @@ const modalEscapeKeydownHandler = function (evt) {
 
 windowScrollHandler();
 window.addEventListener('scroll', windowScrollHandler);
+
+headerButtonBurger.addEventListener('click', () => {
+  headerButtonBurger.classList.toggle('header__button_burger_active');
+});
 
 iphones.forEach(x => x.addEventListener('click', () => {
   x.classList.toggle('iphone_disassembled');
@@ -233,8 +240,6 @@ feedbackForm.addEventListener('submit', (evt) => {
     window.addEventListener('keydown', modalEscapeKeydownHandler);
   }
 
-  const modalResolveButton = document.querySelector('.form-modal__button');
   modalResolveButton.addEventListener('click', modalResolveButtonHandler);
-
 });
 
