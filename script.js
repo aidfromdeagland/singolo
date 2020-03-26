@@ -139,6 +139,7 @@ const shuffle = function (array) {
 
 
 const header = document.querySelector('header');
+const headerNav = header.querySelector('.header__nav');
 const headerButtonBurger = header.querySelector('.header__button_burger');
 const sections = document.querySelectorAll('section');
 const navItems = document.querySelectorAll('.nav-list__item');
@@ -195,6 +196,14 @@ window.addEventListener('scroll', windowScrollHandler);
 
 headerButtonBurger.addEventListener('click', () => {
   headerButtonBurger.classList.toggle('header__button_burger_active');
+});
+
+document.addEventListener('click', evt => {
+  if (!evt.target.closest('header')) {
+    if (headerButtonBurger.classList.contains('header__button_burger_active')) {
+      headerButtonBurger.classList.remove('header__button_burger_active');
+    }
+  }
 });
 
 iphones.forEach(x => x.addEventListener('click', () => {
