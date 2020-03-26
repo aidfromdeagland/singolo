@@ -15,7 +15,8 @@ const slide = function (wrapper, items, prev, next) {
     allowShift = true;
 
   window.addEventListener('resize', () => {
-    slideSize = items.getElementsByClassName('slide')[0].offsetWidth
+    slidesContainer.style.left = Math.round(slidesContainer.offsetLeft / slideSize) * window.innerWidth + 'px';
+    slideSize = items.getElementsByClassName('slide')[0].offsetWidth;
   });
 
   // Clone first and last slide
