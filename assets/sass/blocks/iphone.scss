@@ -9,6 +9,16 @@
   background: #f2f2f2;
   box-shadow: 25px 25px 0 0 rgba(0, 0, 0, 0.15);
 
+  &:before {
+    content: "";
+    background: none;
+  }
+
+  &:after {
+    content: "";
+    background: none;
+  }
+
   &:hover {
     box-shadow: 25px 25px 0 0 rgba(0, 0, 0, 0.15), 0 0 5px 5px #ffffff;
   }
@@ -63,6 +73,7 @@
     height: 339px;
     border-radius: 2px;
     transition: transform 0.5s;
+    z-index: 1;
   }
 
   &_vertical > .iphone__display {
@@ -117,8 +128,23 @@
     background: url("assets/images/covid-19.png") center/contain no-repeat;
   }
 
+  &_disassembled:after {
+    position: absolute;
+    top: 40%;
+    width: 40%;
+    height: 15%;
+    content: "";
+    background: url("assets/images/covid-19_virus.png") center/contain no-repeat;
+    animation: covid-attack 2s ease-in-out infinite both;
+  }
+
   &_disassembled.iphone_horizontal:before {
     transform: rotate(-90deg);
+  }
+
+  &_disassembled.iphone_horizontal:after {
+    transform: rotate(-90deg);
+    animation: covid-attack_horizontal 2s ease-in-out infinite both;
   }
 
   &_disassembled.iphone_vertical {

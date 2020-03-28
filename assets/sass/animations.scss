@@ -474,3 +474,51 @@
     transform: scale(1) translate(-50px, 50px) rotate3d(-1, 1, 0, 360deg);
   }
 }
+
+@keyframes covid-attack {
+  from {
+    transform: scale(1) translate(5px, 10px) rotate(0);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91) translate(15px, 15px)  rotate(-45deg);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98) translate(-5px, -5px)  rotate(-120deg);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87) translate(-15px, 0)  rotate(-270deg);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1) translate(5px, 10px) rotate(-45deg);
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes covid-attack_horizontal {
+  from {
+    transform: scale(1) translate(5px, 10px) rotate(-90deg);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91) translate(15px, 15px) rotate(-135deg);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98) translate(-5px, -5px) rotate(-360deg);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87) translate(-15px, 0) rotate(-90deg);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1) translate(5px, 10px) rotate(-135deg);
+    animation-timing-function: ease-out;
+  }
+}
