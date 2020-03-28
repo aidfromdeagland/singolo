@@ -61,6 +61,14 @@
 @media (max-width: 1019px) {
   .card {
     &__heading {
+      margin: 8px 0 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    &__heading {
       margin: 14px 0 0;
     }
   }
